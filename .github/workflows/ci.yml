@@ -29,3 +29,6 @@ jobs:
 
       - name: Run Semgrep security scan
         uses: returntocorp/semgrep-action@v1
+        with:
+          config: .semgrep.yml
+
