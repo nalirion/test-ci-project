@@ -1,9 +1,8 @@
 rules:
-  - id: detect-hardcoded-password
-    pattern: password = "<...>"
-    message: "Avoid hardcoding passwords."
+  - id: hardcoded-password
+    pattern: password = "..."
+    message: "Hardcoded password found — avoid storing secrets in code!"
     severity: ERROR
     languages: [python]
     metadata:
       category: security
-      technology: python
