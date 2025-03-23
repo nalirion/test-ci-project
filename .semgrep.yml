@@ -1,0 +1,9 @@
+rules:
+  - id: detect-hardcoded-password
+    pattern: password = "<...>"
+    message: "Avoid hardcoding passwords."
+    severity: ERROR
+    languages: [python]
+    metadata:
+      category: security
+      technology: python
